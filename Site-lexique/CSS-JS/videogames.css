@@ -1,0 +1,158 @@
+@import url(fonts.css);
+
+.is-hidden { display: none; }
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  .tabcontent{
+    width: 100vw;
+  }
+  
+  body {
+    font-family: 'Satoshi-Regular';
+    background: #FFC171;
+    color: #280B0C;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+
+  }
+
+  h1{
+    font-family: 'Nyght-Medium-Italic';
+    font-size: 2em;
+    margin-right: 2vw;
+  }
+
+  h2{
+    font-family: 'Satoshi-Bold';
+    border-bottom: 1px solid #256F5C;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #5D1A1B;
+    text-decoration: none;
+    border: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .NAV{
+    margin: 2% 0% 2% 2%;
+    border-bottom: #256F5C 1px solid;
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    background-color: #FFC171; 
+    color: #280B0C; 
+    border: 1px solid #256F5C;
+    padding: 1% 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7em;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #256F5C; 
+    color: #280B0C; 
+  }
+
+  .LABEL{
+    margin:2% 0% 0% 2%;
+    position: fixed;
+    width: 20%;
+   }
+
+   li{
+    list-style-position: inside;
+    list-style-type: circle;
+   }
+
+
+
+
+
+
+
+  .CONTAINER-Disco, .CONTAINER-BG3{
+    flex-wrap: wrap;
+    margin:2% 2% 2% 0%;
+    padding-left: 2%;
+    width: 75%;
+    float: right;
+  }
+
+
+  .box-Disco, .box-BG3{
+    width: 300px;
+    height: 180px;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid #256F5C;
+    border-radius: 4px;
+    float: left;
+    transition-duration: 0.2s;
+  }
+
+  .box-Disco:hover, .box-BG3:hover{
+    background-color: #256F5C;
+    border-radius: 4px;
+  }
+
+  span{
+    border-top: 1px solid #256F5C;
+    font-family: 'Satoshi-Medium';
+    font-size: 0.7em;
+  }
+
+  @media (max-width: 850px) {
+    /* For tablets: */
+
+    .NAV{
+      width: 80%;
+      border-bottom: none;
+      display: block;
+      align-items: center;
+      display: inline-block;
+    }
+
+    .CONTAINER-Disco, .CONTAINER-BG3{
+      padding-left: 0%;
+    }
+
+    .box-Disco, .box-BG3{
+      width: 70%;
+      height: auto;
+      float: right;
+      margin-right: 1%;
+    }
+
+    .LABEL{
+      width: 35%;
+      margin-left: 5%;
+      position: absolute;
+     }
+
+     input{
+      position: fixed;
+      width: 20%;
+      bottom: 5%;
+      left: 10%;
+     }
+
+  }
